@@ -9,23 +9,23 @@ Run the full project in Colab:
 
 ---
 
-# 🚗 Health Insurance Cross-Sell Prediction
+# Health Insurance Cross-Sell Prediction
 
 **Client:** A leading Indian insurance company
 **Objective:** Predict whether current health insurance policyholders are likely to purchase **vehicle insurance**, using demographic, vehicle, and policy data.
 
 ---
 
-## 🧠 Business Context
+## Business Context
 
 The client, based in **India**, provides health insurance and wants to expand cross-selling to **vehicle insurance**. The goal is to develop a **machine learning model** that predicts customer interest in vehicle insurance based on historical data, improving targeting and reducing random marketing efforts.
 
-📎 **Dataset Source:**
+**Dataset Source:**
 [Health Insurance Cross-Sell Prediction – Kaggle](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction/data)
 
 ---
 
-## 🛠️ Data Overview
+## Data Overview
 
 The dataset includes information in the following categories:
 
@@ -46,15 +46,15 @@ Given the Indian context, **currency values**, **demographic distributions**, an
 
 ---
 
-## 📊 Project Workflow
+## Project Workflow
 
-### 1. 🧪 Exploratory Data Analysis (EDA)
+### 1. Exploratory Data Analysis (EDA)
 
 * Univariate & bivariate analysis of categorical and numerical features
 * Correlation analysis using `dython` for categorical features
 * Statistical distribution comparisons using **Kolmogorov-Smirnov test**
 
-### 2. 🧹 Preprocessing & Feature Engineering
+### 2. Preprocessing & Feature Engineering
 
 * Encoding:
 
@@ -66,14 +66,14 @@ Given the Indian context, **currency values**, **demographic distributions**, an
   * `RandomOverSampler`, `RandomUnderSampler`
   * `SMOTENC` (for categorical + numerical data)
 
-### 3. 🔍 Model Development
+### 3. Model Development
 
 * Base model: `LogisticRegression`
 * Hyperparameter tuning with `RandomizedSearchCV`
 * Training with `train_test_split` (stratified)
 * Pipeline construction with `Pipeline` and `ColumnTransformer`
 
-### 4. 📈 Evaluation Metrics
+### 4. Evaluation Metrics
 
 * **F1 Score**
 * **ROC-AUC**
@@ -82,7 +82,7 @@ Given the Indian context, **currency values**, **demographic distributions**, an
 * **Classification Report**
 * Visuals: `RocCurveDisplay`, `PrecisionRecallDisplay`
 
-### 5. 🧠 Model Interpretation
+### 5. Model Interpretation
 
 * Local interpretability with **LIME** (`lime.lime_tabular`)
 * Feature impact and decision insights for individual predictions
